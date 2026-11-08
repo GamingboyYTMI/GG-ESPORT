@@ -3,7 +3,7 @@
 > The official Android community app for GG Esports.
 
 [![Platform](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)](https://www.android.com/)
-[![Version](https://img.shields.io/badge/version-1.0.0-ff6a00)](https://github.com/GamingboyYTMI/GG-ESPORT/releases/tag/v1.0.0)
+[![Version](https://img.shields.io/badge/version-1.0.1-ff6a00)](https://github.com/GamingboyYTMI/GG-ESPORT/releases/latest)
 
 GG Esports brings the project’s official community channels and esports updates together in one place. This repository contains the public project presentation and release information for the Android application.
 
@@ -12,10 +12,10 @@ GG Esports brings the project’s official community channels and esports update
 | Detail | Information |
 | --- | --- |
 | Project | GG Esports |
-| Current version | 1.0.0 |
+| Current version | 1.0.1 |
 | Platform | Android |
 | Release channel | GitHub Releases |
-| APK | `GG_Esports_User.apk` |
+| APK | `GG_Esports_User_v1.0.1.apk` |
 
 ### Included experience
 
@@ -30,14 +30,14 @@ Feature availability can vary by Android device and release. This project is not
 
 ## Download the latest Android APK
 
-Download **GG_Esports_User.apk** from the [v1.0.0 release page](https://github.com/GamingboyYTMI/GG-ESPORT/releases/tag/v1.0.0).
+Download the latest **GG Esports APK** from the [latest release page](https://github.com/GamingboyYTMI/GG-ESPORT/releases/latest).
 
-The APK is distributed through GitHub Releases. Always use the release page above to confirm that you are downloading the current official asset and version.
+The APK is distributed through GitHub Releases. The latest verified release is **v1.0.1**, currently published with the `GG_Esports_User_v1.0.1.apk` asset. Always use the latest release page above so future releases are selected automatically.
 
 ## Installation
 
-1. Open the [GG Esports v1.0.0 release](https://github.com/GamingboyYTMI/GG-ESPORT/releases/tag/v1.0.0).
-2. Download `GG_Esports_User.apk` from the **Assets** section.
+1. Open the [latest GG Esports release](https://github.com/GamingboyYTMI/GG-ESPORT/releases/latest).
+2. Download the APK shown in that release’s **Assets** section.
 3. Open the downloaded APK on your Android device.
 4. If Android asks for permission to install from that source, allow it temporarily for your browser or file manager.
 5. Review the installation prompt and install the app.
