@@ -35,10 +35,15 @@ h1{font-size:clamp(2.6rem,10vw,5rem);font-weight:900;line-height:1.05;letter-spa
 h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));
   -webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:520px;margin:20px auto 32px;color:var(--muted);font-size:1.1rem}
+.hero-actions{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
 .btn{display:inline-block;padding:14px 28px;border-radius:12px;font-weight:700;
   background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;
   box-shadow:0 8px 24px rgba(255,106,0,.35);transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
+.download-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  background:var(--surface);border:1px solid var(--accent);box-shadow:none}
+.download-btn:hover{background:var(--accent);box-shadow:0 8px 24px rgba(255,106,0,.3)}
+.download-icon{width:1.1em;height:1.1em;fill:currentColor}
 section{padding:50px 0}
 h2{font-size:1.8rem;text-align:center;margin-bottom:8px}
 .sub{text-align:center;color:var(--muted);margin-bottom:34px}
@@ -70,7 +75,15 @@ footer{text-align:center;padding:30px 0 40px;color:var(--muted);font-size:.9rem;
     <div class="badge">🔥 FREE FIRE ESPORTS</div>
     <h1>GG <em>ESPORT</em></h1>
     <p>Squad up, rank up, and win. Join the GG ESPORT family for tournaments, scrims and Free Fire updates.</p>
-    <a class="btn" href="#join">Join Our Community</a>
+    <div class="hero-actions">
+      <a class="btn" href="#join">Join Our Community</a>
+      <a class="btn download-btn" href="https://github.com/GamingboyYTMI/GG-ESPORT/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">
+        <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/>
+        </svg>
+        Download GG Esports APK
+      </a>
+    </div>
   </header>
 
   <section>
