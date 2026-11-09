@@ -14,7 +14,7 @@ Download the newest User APK from the latest release and install it over the cur
 
 ## Are screenshots available?
 
-No verified screenshots are currently published in this repository. Authentic screenshots will be added when available.
+Yes. The [README gallery](../README.md#screenshots) and website include the authentic screenshots stored in `assets/screenshots/`.
 
 ## Is GG ESPORT affiliated with Garena or Free Fire?
 

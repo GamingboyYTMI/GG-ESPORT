@@ -2,6 +2,8 @@
 
 > **PLAY. COMPETE. WIN.**
 
+<p align="center"><img src="assets/screenshots/Neon%20GG%20Esports%20Shield%20Logo.png" alt="GG ESPORT neon shield logo" width="220"></p>
+
 ![GG ESPORT banner](assets/banner.svg)
 
 [![Platform](https://img.shields.io/badge/platform-Android-0b0b12?logo=android&logoColor=white&labelColor=6d28d9)](https://www.android.com/)
@@ -46,7 +48,23 @@ See the detailed [installation guide](docs/INSTALLATION.md) for update and troub
 
 ## Screenshots
 
-No verified app screenshots are currently included in this repository. Screenshots will be added only when authentic app captures are available; no mockups are presented as product screens.
+These are authentic project images currently stored in [`assets/screenshots/`](assets/screenshots/).
+
+<p align="center">
+  <img src="assets/screenshots/Screenshot_20261109_160207.jpg" alt="GG ESPORT app screen showing the tournament interface" width="220">
+  <img src="assets/screenshots/Screenshot_20261109_160157.jpg" alt="GG ESPORT app screen showing tournament content" width="220">
+  <img src="assets/screenshots/Screenshot_20261109_160137.jpg" alt="GG ESPORT app screen showing the player experience" width="220">
+  <img src="assets/screenshots/Screenshot_20261109_160059.jpg" alt="GG ESPORT app screen showing app navigation" width="220">
+</p>
+<p align="center">
+  <img src="assets/screenshots/Screenshot_20261109_160049.jpg" alt="GG ESPORT app screen showing esports information" width="220">
+  <img src="assets/screenshots/Screenshot_20261109_155610.jpg" alt="GG ESPORT app screen showing a community or tournament view" width="220">
+  <img src="assets/screenshots/Screenshot_20261109_155537.jpg" alt="GG ESPORT app screen showing the application home experience" width="220">
+</p>
+
+## Founder and team
+
+GG ESPORT is an independent gaming project. Founder and team identities are not published in this repository, so no names, roles, or profile images are presented without confirmation.
 
 ## Community and support
 

@@ -15,7 +15,7 @@
     .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
     header{border-bottom:1px solid rgba(139,92,246,.2);background:rgba(9,7,17,.88);position:sticky;top:0;z-index:5;backdrop-filter:blur(14px)}
     nav{display:flex;align-items:center;justify-content:space-between;min-height:72px}
-    .brand{font-weight:900;letter-spacing:.1em;font-size:1.15rem}.brand span{color:var(--pink)}
+    .brand{display:inline-flex;align-items:center;font-weight:900;letter-spacing:.1em;font-size:1.15rem}.brand img{width:34px;height:34px;margin-right:10px}.brand span{color:var(--pink)}
     .nav-links{display:flex;gap:24px;color:var(--muted);font-size:.92rem;font-weight:700}.nav-links a:hover{color:var(--text)}
     .hero{position:relative;overflow:hidden;padding:clamp(72px,12vw,140px) 0 110px;background:radial-gradient(circle at 75% 15%,rgba(236,72,153,.22),transparent 30%),radial-gradient(circle at 20% 20%,rgba(109,40,217,.3),transparent 40%)}
     .hero:after{content:"";position:absolute;inset:auto -10% -180px;height:340px;background:linear-gradient(180deg,transparent,var(--bg));pointer-events:none}
@@ -29,17 +29,22 @@
     .release{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:stretch}.panel{background:linear-gradient(145deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:30px}.release h3{font-size:1.7rem;margin:10px 0}.version{color:#f0abfc;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
     .release-meta{display:grid;gap:14px}.meta{border-left:2px solid var(--pink);padding-left:16px}.meta b{display:block;font-size:1.1rem}.meta span{color:var(--muted);font-size:.9rem}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px;border:1px solid var(--line);border-radius:16px;background:rgba(26,16,42,.65)}.card-icon{color:#e9a7ff;font-size:1.4rem}.card h3{margin:12px 0 8px}.card p{color:var(--muted);font-size:.95rem}
+    .brand-banner{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:20px;margin-top:28px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery figure{margin:0}.gallery img{display:block;width:100%;height:280px;object-fit:cover;border:1px solid var(--line);border-radius:14px}.gallery figcaption{color:var(--muted);font-size:.78rem;margin-top:7px}
+    .team-card{display:flex;align-items:center;gap:20px}.team-mark{width:76px;height:76px;flex:none}.team-card h3{margin-bottom:6px}
     .community{display:grid;grid-template-columns:1fr 1fr;gap:18px}.social-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.social{padding:10px 14px;border:1px solid var(--line);border-radius:9px;color:#e9d5ff;font-weight:700;font-size:.9rem}.social:hover{border-color:var(--pink)}
     .note{font-size:.9rem;color:var(--muted);margin-top:22px}.note a{color:#e9a7ff;text-decoration:underline}
     footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:760px){.nav-links{gap:12px;font-size:.8rem}.nav-links a:nth-child(2){display:none}.release,.community{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:80px}.wrap{width:min(100% - 28px,1120px)}}
+    @media(max-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:760px){.nav-links{gap:12px;font-size:.8rem}.nav-links a:nth-child(2){display:none}.release,.community{grid-template-columns:1fr}.cards,.gallery{grid-template-columns:1fr 1fr}.gallery img{height:240px}.hero{padding-top:80px}.wrap{width:min(100% - 28px,1120px)}}
+    @media(max-width:440px){.gallery{grid-template-columns:1fr}.gallery img{height:auto}.team-card{align-items:flex-start;flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
   </style>
 </head>
 <body>
   <header><nav class="wrap" aria-label="Primary navigation">
-    <a class="brand" href="#" aria-label="GG ESPORT home">GG <span>ESPORT</span></a>
-    <div class="nav-links"><a href="#download">Download</a><a href="#community">Community</a><a href="https://github.com/GamingboyYTMI/GG-ESPORT" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    <a class="brand" href="#" aria-label="GG ESPORT home"><img src="assets/screenshots/Neon%20GG%20Esports%20Shield%20Logo.png" alt="">GG <span>ESPORT</span></a>
+    <div class="nav-links"><a href="#download">Download</a><a href="#screenshots">Screenshots</a><a href="#team">Team</a><a href="https://github.com/GamingboyYTMI/GG-ESPORT" target="_blank" rel="noopener noreferrer">GitHub</a></div>
   </nav></header>
   <main>
     <section class="hero"><div class="wrap">
@@ -47,12 +52,23 @@
       <h1>PLAY. <span>COMPETE.</span> WIN.</h1>
       <p class="hero-copy">Find the latest GG ESPORT user app, follow tournament and community updates, and stay connected with the squad.</p>
       <div class="actions"><a class="button primary" href="https://github.com/GamingboyYTMI/GG-ESPORT/releases/latest" target="_blank" rel="noopener noreferrer">Download latest APK</a><a class="button secondary" href="#community">Join the community</a></div>
+      <img class="brand-banner" src="assets/banner.svg" alt="GG ESPORT branded banner with the tagline PLAY. COMPETE. WIN.">
     </div></section>
     <section id="download"><div class="wrap">
       <div class="section-heading"><p class="eyebrow">Official release channel</p><h2>Ready for your next match?</h2><p>Download only from the official GitHub release page. The latest verified public version is v1.0.1.</p></div>
       <div class="release"><div class="panel"><span class="version">Latest verified release</span><h3>GG ESPORT User App · v1.0.1</h3><p class="muted">Open the release page, choose the User APK from Assets, and follow the Android installation prompts.</p><div class="actions"><a class="button primary" href="https://github.com/GamingboyYTMI/GG-ESPORT/releases/latest" target="_blank" rel="noopener noreferrer">Open latest release</a></div></div><div class="panel release-meta"><div class="meta"><b>Android</b><span>APK distribution</span></div><div class="meta"><b>GitHub Releases</b><span>Primary download source</span></div><div class="meta"><b>No Play Store claim</b><span>Install from a trusted source</span></div></div></div>
     </div></section>
     <section><div class="wrap"><div class="section-heading"><p class="eyebrow">What is verified</p><h2>One place for the GG ESPORT community.</h2><p>The public repository verifies the distribution and community surfaces below. Private in-app features are not advertised without source or release-note confirmation.</p></div><div class="cards"><article class="card"><div class="card-icon" aria-hidden="true">◈</div><h3>Android user app</h3><p>Download the published user APK through the official GitHub release channel.</p></article><article class="card"><div class="card-icon" aria-hidden="true">✦</div><h3>Community updates</h3><p>Follow tournament news, match updates, and announcements through the official channels.</p></article><article class="card"><div class="card-icon" aria-hidden="true">↗</div><h3>Player support</h3><p>Use the verified social links and support email to stay connected and ask for help.</p></article></div></div></section>
+    <section id="screenshots"><div class="wrap"><div class="section-heading"><p class="eyebrow">In-app gallery</p><h2>See GG ESPORT in action.</h2><p>Real project screenshots from the repository. No mockups or generated product screens are used.</p></div><div class="gallery">
+      <figure><img src="assets/screenshots/Screenshot_20261109_160207.jpg" alt="GG ESPORT app screen showing the tournament interface"><figcaption>Tournament interface</figcaption></figure>
+      <figure><img src="assets/screenshots/Screenshot_20261109_160157.jpg" alt="GG ESPORT app screen showing tournament content"><figcaption>Tournament content</figcaption></figure>
+      <figure><img src="assets/screenshots/Screenshot_20261109_160137.jpg" alt="GG ESPORT app screen showing the player experience"><figcaption>Player experience</figcaption></figure>
+      <figure><img src="assets/screenshots/Screenshot_20261109_160059.jpg" alt="GG ESPORT app screen showing app navigation"><figcaption>App navigation</figcaption></figure>
+      <figure><img src="assets/screenshots/Screenshot_20261109_160049.jpg" alt="GG ESPORT app screen showing esports information"><figcaption>Esports information</figcaption></figure>
+      <figure><img src="assets/screenshots/Screenshot_20261109_155610.jpg" alt="GG ESPORT app screen showing a community or tournament view"><figcaption>Community view</figcaption></figure>
+      <figure><img src="assets/screenshots/Screenshot_20261109_155537.jpg" alt="GG ESPORT app screen showing the application home experience"><figcaption>App home</figcaption></figure>
+    </div></div></section>
+    <section id="team"><div class="wrap"><div class="section-heading"><p class="eyebrow">Founder and team</p><h2>Built by an independent gaming project.</h2><p>Founder names, team roles, and profile photos are not published in this repository, so GG ESPORT does not invent or display unverified identities.</p></div><div class="panel team-card"><img class="team-mark" src="assets/screenshots/Neon%20GG%20Esports%20Shield%20Logo.png" alt="GG ESPORT neon shield logo"><div><h3>Our Team</h3><p class="muted">GG ESPORT is an independent gaming project focused on its Android app, esports community, and tournament updates.</p></div></div></div></section>
     <section id="community"><div class="wrap"><div class="community"><div class="panel"><p class="eyebrow">Stay connected</p><h2>Join the squad.</h2><p class="muted">Use the official community links for announcements, discussion, and support.</p><div class="social-list"><a class="social" href="https://whatsapp.com/channel/0029Vb93OyKDuMRoQDclgW3V" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a><a class="social" href="https://chat.whatsapp.com/EWhRMC2Pfi42BWvgRYxy92" target="_blank" rel="noopener noreferrer">WhatsApp Community</a><a class="social" href="https://www.instagram.com/gaming_boy534?exln=MWl3enNhY28wZjRpeg==" target="_blank" rel="noopener noreferrer">Instagram</a><a class="social" href="https://youtube.com/@gaming_boy" target="_blank" rel="noopener noreferrer">YouTube</a><a class="social" href="https://discord.gg/9RsSm9Yf72" target="_blank" rel="noopener noreferrer">Discord</a></div></div><div class="panel"><p class="eyebrow">Support</p><h2>Need a hand?</h2><p class="muted">For installation help or a reproducible issue, include your device model, Android version, app version, steps, and screenshots with private details removed.</p><div class="actions"><a class="button secondary" href="mailto:gamingboylive46@gmail.com">Email support</a></div><p class="note">Read the <a href="docs/FAQ.md">FAQ</a> and <a href="docs/PRIVACY.md">privacy information</a> before installing.</p></div></div></div></section>
   </main>
   <footer><div class="wrap footer-row"><span>© 2026 GG ESPORT · PLAY. COMPETE. WIN.</span><span>Independent project — not affiliated with Garena or Free Fire.</span></div></footer>
