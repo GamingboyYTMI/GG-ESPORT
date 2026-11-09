@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">GG ESPORT banner</title>
+  <desc id="desc">Original dark purple and pink GG ESPORT brand banner.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090711"/><stop offset=".55" stop-color="#1b1030"/><stop offset="1" stop-color="#35113d"/></linearGradient><linearGradient id="accent"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs>
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <circle cx="1320" cy="40" r="330" fill="#8b5cf6" opacity=".14"/><circle cx="1460" cy="430" r="250" fill="#ec4899" opacity=".12"/>
+  <path d="M0 430 470 80M350 520 820 0M1010 520 1510 0" stroke="#c084fc" stroke-opacity=".12" stroke-width="2"/>
+  <text x="120" y="230" fill="#fff" font-family="Arial,sans-serif" font-size="92" font-weight="900" letter-spacing="9">GG ESPORT</text>
+  <text x="126" y="310" fill="url(#accent)" font-family="Arial,sans-serif" font-size="38" font-weight="800" letter-spacing="12">PLAY. COMPETE. WIN.</text>
+</svg>

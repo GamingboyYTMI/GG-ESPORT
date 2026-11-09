@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">GG ESPORT logo</title>
+  <desc id="desc">Original text-based GG ESPORT wordmark.</desc>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs>
+  <rect width="640" height="160" rx="28" fill="#090711"/>
+  <path d="M66 52h70v22h-43v12h34v22H93v12h43v22H66z" fill="url(#g)"/>
+  <path d="M155 52h70v22h-43v12h34v22h-34v12h43v22h-70z" fill="#fff"/>
+  <text x="260" y="106" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="7">ESPORT</text>
+</svg>
